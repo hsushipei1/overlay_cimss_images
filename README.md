@@ -34,6 +34,6 @@ __This programs are tested and run well under GNU/Linux, MacOS and Windows (7 or
  4. The output combined images are placed in "overlaid" under "data".
  
  ## Appendix
- 1. Is IR oberservation the only product available?
+ 1. Is IR oberservation the only product available? <br>
  Ans: One can modify the link following "urllib.urlretrieve" in "realtime_cimss_IR_EH_overlay.py" or paths in "historical_cimss_IR_EH_overlay.py". You can look up the paths from the extracted bundle.
  Here's the combined [water vapor observation](http://i.imgur.com/IIvcwSC.png)
