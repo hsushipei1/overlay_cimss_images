@@ -26,12 +26,20 @@ __This programs are tested and run well under GNU/Linux, MacOS and Windows (7 or
  
  #### Historical Observation
  1. Download historical satellite image bundle from [CIMSS Data Archive](http://tropic.ssec.wisc.edu/archive/). 
- 2. Extract images from the bundle and you'll get directory "data". In "data", there are folders named the region of your interest, like "Australia" or "NWPacific", etc.
- 3. Place "historical_cimss_IR_EH_overlay.py" under "data" and execute it.
+ 2. Extract images from the bundle and you'll get directory "data". In "data", there are folders named the region of your interest.
+ 3. **To decide the period for historical images to combine, you need to modify the first 4 lines in "historical_cimss_IR_EH_overlay.py"**
+ ```python
+startd = datetime.datetime(2017,5,1)
+endd = datetime.datetime(2017,5,29)
+deltad = datetime.timedelta(days=+1) 
+subt = ["00", "12"] # 00Z 12Z
+ ```
+ where *startd* and *endd* are the start and end date. *deltad* is interval between each date. *subt* are observations per day.
+ 4. Place "historical_cimss_IR_EH_overlay.py" under "data". and execute it.
  ```bash
  $ python historical_cimss_IR_EH_overlay.py
  ```
- 4. The output combined images are placed in "overlaid" under "data".
+ 5. The output combined images are placed in "overlaid" under "data".
  
  ## Appendix
  1. Is IR oberservation the only product available? <br>
