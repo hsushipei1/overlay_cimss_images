@@ -13,11 +13,12 @@ __This programs are tested and run well under GNU/Linux, MacOS and Windows (7 or
 
  - *GNU/Linux users*: Python may be a built-in software and install Imagemagick via package manager (apt, dnf, etc) of your distro. 
  - *MacOS users*: Install Python and Imagemagick through [Homebrew](https://brew.sh).
- - *Windwos users*: Download Python 2.7.x and "ImageMagick-7.0.5-9-Q16-x64-dll.exe" from their website. **Notice, remember to enable "add python.exe to path" during Python installation.** 
+ - *Windows users*: Download Python 2.7.x and "ImageMagick-7.0.5-9-Q16-x64-dll.exe" from their website. **Notice, remember to enable "add python.exe to path" during Python installation.** 
  
  ## How to Use?
  Execute via terminal (GNU/Linux and MacOS) or PowerShell (Windows)
  #### Real time Observation
+ [Video demonstration](https://youtu.be/a6VqJliQO28)<br>
  Just run "realtime_cimss_IR_EH_overlay.py" from terminal or PowerShell
  ```bash
  $ python realtime_cimss_IR_EH_overlay.py
@@ -25,6 +26,7 @@ __This programs are tested and run well under GNU/Linux, MacOS and Windows (7 or
  File "overlaid_cimss_IR_latest.png" is the combined picture.
  
  #### Historical Observation
+ [Video demonstration](https://youtu.be/-16qNYCEau0) <br>
  1. Download historical satellite image bundle from [CIMSS Data Archive](http://tropic.ssec.wisc.edu/archive/). 
  2. Extract images from the bundle and you'll get directory "data". In "data", there are folders named the region of your interest.
  3. **To decide the period for historical images to combine, you need to modify the first 4 lines in "historical_cimss_IR_EH_overlay.py"**
@@ -40,6 +42,8 @@ subt = ["00", "12"] # 00Z 12Z
  $ python historical_cimss_IR_EH_overlay.py
  ```
  5. The output combined images are placed in "overlaid" under "data".
+ 
+ ## How it works?
  
  ## Appendix
  1. Is IR oberservation the only product available? <br>
